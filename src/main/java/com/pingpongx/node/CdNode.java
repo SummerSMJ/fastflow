@@ -1,7 +1,8 @@
 package com.pingpongx.node;
 
-import com.pingpongx.risk.data.biz.service.node.annotation.NodeField;
-import com.pingpongx.risk.data.biz.service.node.annotation.NodeStatement;
+
+import com.pingpongx.node.annotation.NodeField;
+import com.pingpongx.node.annotation.NodeStatement;
 import com.yomahub.liteflow.annotation.LiteflowMethod;
 import com.yomahub.liteflow.core.NodeComponent;
 import com.yomahub.liteflow.enums.LiteFlowMethodEnum;

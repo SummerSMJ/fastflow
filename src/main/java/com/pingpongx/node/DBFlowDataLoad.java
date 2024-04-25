@@ -1,13 +1,15 @@
 package com.pingpongx.node;
 
-import com.google.common.collect.Lists;
-import com.pingpongx.risk.data.biz.service.node.core.FlowChain;
+
+import com.pingpongx.node.core.FlowChain;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  * node和流程编排数据加载
@@ -21,7 +23,7 @@ public class DBFlowDataLoad extends AbstractFlowDataLoad {
 
     @Override
     public void getData() {
-        List<FlowChain> flowChains = Lists.newArrayList();
+        List<FlowChain> flowChains = new ArrayList<>();
         FlowChain flowChain = new FlowChain();
         flowChain.setChainId("chain2");
         flowChain.setChainName("chain2");

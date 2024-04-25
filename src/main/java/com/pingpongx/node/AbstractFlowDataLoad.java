@@ -1,6 +1,7 @@
 package com.pingpongx.node;
 
-import com.pingpongx.risk.data.biz.service.node.core.FlowChain;
+
+import com.pingpongx.node.core.FlowChain;
 import com.yomahub.liteflow.builder.el.LiteFlowChainELBuilder;
 import com.yomahub.liteflow.flow.FlowBus;
 import lombok.extern.slf4j.Slf4j;
